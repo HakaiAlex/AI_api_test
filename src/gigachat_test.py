@@ -37,7 +37,7 @@ def get_token():
 def ask_gigachat(token, prompt):
     url = "https://gigachat.devices.sberbank.ru/api/v1/chat/completions"
     headers = {
-        "Content-Type": "application/x-www-form-urlencoded",
+        "Content-Type": "application/json",
         "Authorization": f"Bearer {token}"
     }
     payload = {
